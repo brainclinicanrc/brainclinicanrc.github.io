@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Clinic - Your Partner in Brain Health</title>
+  <meta name="description" content="Empowering Minds, Transforming Lives. Evidence-based rehab and support for neurological and developmental needs.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Brain Clinic</a>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <button class="nav-link" data-scroll="services">Services</button>
+          <button class="nav-link" data-scroll="specialized-therapies">Therapies</button>
+          <button class="nav-link" data-scroll="team">Our Team</button>
+          <button class="nav-link" data-scroll="testimonials">Testimonials</button>
+          <button class="nav-link" data-scroll="location">Location</button>
+          <button class="nav-link" data-scroll="contact">Contact</button>
+          <button class="btn btn-primary" id="header-book-btn">Book Appointment</button>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fas fa-bars menu-icon"></i>
+          <i class="fas fa-times close-icon hidden"></i>
+        </button>
+      </div>
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav hidden">
+        <button class="nav-link" data-scroll="services">Services</button>
+        <button class="nav-link" data-scroll="specialized-therapies">Therapies</button>
+        <button class="nav-link" data-scroll="team">Our Team</button>
+        <button class="nav-link" data-scroll="testimonials">Testimonials</button>
+        <button class="nav-link" data-scroll="location">Location</button>
+        <button class="nav-link" data-scroll="contact">Contact</button>
+        <button class="btn btn-primary w-full" id="mobile-book-btn">Book Appointment</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section with Slideshow -->
+    <section class="hero">
+      <!-- Slideshow Container -->
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="WhatsApp Image 2025-05-11 at 13.07.39_e5ff3915.jpg" alt="Brain Clinic Reception" class="slide-image">
+          <div class="slide-overlay"></div>
+        </div>
+        
+        <div class="slide fade">
+          <img src="WhatsApp Image 2025-05-11 at 13.07.41_c964df30.jpg" alt="Therapy Session" class="slide-image">
+          <div class="slide-overlay"></div>
+        </div>
+        
+        <div class="slide fade">
+          <img src="WhatsApp Image 2025-05-11 at 13.10.53_82a6d231.jpg" alt="Modern Equipment" class="slide-image">
+          <div class="slide-overlay"></div>
+        </div>
+        
+        <div class="slide fade">
+          <img src="WhatsApp Image 2025-05-11 at 13.10.54_3ac7a70e.jpg" alt="Child Therapy" class="slide-image">
+          <div class="slide-overlay"></div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="slide-btn prev" aria-label="Previous slide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slide-btn next" aria-label="Next slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Navigation dots -->
+        <div class="slide-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="hero-content animate-fade-in">
+          <h1>Welcome to Brain Clinic's Autism and Rehabilitation Center</h1>
+          <h2>Your Partner in Brain Health</h2>
+          <p class="hero-subtitle">Empowering Minds, Transforming Lives.</p>
+          <p class="hero-description">
+            Our mission is to deliver evidence-based rehab and support for neurological and developmental needs.
+          </p>
+          <button class="btn btn-hero" id="hero-book-btn">Book an Appointment</button>
+        </div>
+      </div>
+      <div class="hero-shape"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-white">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Our Comprehensive Services</h2>
+          <div class="section-divider teal"></div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon teal">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Occupational Therapy</h3>
+            <p>Enhancing daily living skills and independence.</p>
+            <ul>
+              <li>Focus on sensory integration and motor skills</li>
+              <li>Adaptive equipment support</li>
+              <li>Fine motor skill training for children with autism</li>
+            </ul>
+          </div>
+          <div class="service-card animate-on-scroll" data-delay="100">
+            <div class="service-icon teal">
+              <i class="fas fa-hand-holding-medical"></i>
+            </div>
+            <h3>Stroke & Hand Rehabilitation</h3>
+            <p>Restoring function with advanced therapies.</p>
+            <ul>
+              <li>Constraint-Induced Movement Therapy (CIMT)</li>
+              <li>60% of stroke patients regain significant hand function</li>
+            </ul>
+          </div>
+          <div class="service-card animate-on-scroll" data-delay="200">
+            <div class="service-icon teal">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Special Education</h3>
+            <p>Personalized programs to support cognitive development.</p>
+            <ul>
+              <li>Individualized Education Programs (IEPs)</li>
+              <li>Aligned with each child's learning style</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialized Therapies Section -->
+    <section id="specialized-therapies" class="section bg-gray">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Specialized Therapies for Every Need</h2>
+          <div class="section-divider blue"></div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon blue">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>ABA Therapy</h3>
+            <p>Evidence-based autism intervention through positive reinforcement.</p>
+            <ul>
+              <li>85% success rate in social skills improvement.</li>
+            </ul>
+          </div>
+          <div class="service-card animate-on-scroll" data-delay="100">
+            <div class="service-icon blue">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Speech & Language Therapy</h3>
+            <p>Improving communication, articulation, and social interaction.</p>
+            <ul>
+              <li>70% improvement in clarity within six months.</li>
+            </ul>
+          </div>
+          <div class="service-card animate-on-scroll" data-delay="200">
+            <div class="service-icon blue">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <h3>Psychotherapy & CBT</h3>
+            <p>Identify developmental, emotional, or behavioral issues in children and adolescents.</p>
+            <p>Offer therapy for children, teens, and adults dealing with psychological or emotional challenges</p>
+            <ul>
+              <li>Focus on anxiety and depression relief.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovative Therapies Section -->
+    <section id="innovative-therapies" class="section bg-white">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Innovative Therapies for Holistic Well-being</h2>
+          <div class="section-divider purple"></div>
+        </div>
+        <div class="services-grid-2">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon purple">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Sports and Group Therapy</h3>
+            <p>Enhances social skills and physical health via team activities.</p>
+            <ul>
+              <li>Inclusive programs for individuals with disabilities.</li>
+            </ul>
+          </div>
+          <div class="service-card animate-on-scroll" data-delay="100">
+            <div class="service-icon purple">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>Progress Showcase</h3>
+            <p>Visual documentation of client achievements and milestones.</p>
+            <ul>
+              <li>Before and after photos/videos highlight client achievements.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinic Gallery Section -->
+    <section id="clinic-gallery" class="section bg-gray">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Our Clinic Environment</h2>
+          <div class="section-divider teal"></div>
+          <p class="section-description">Take a virtual tour of our state-of-the-art facilities designed for comfort and healing.</p>
+        </div>
+        <div class="gallery-container animate-on-scroll">
+          <div class="gallery-main">
+            <img id="featured-image" src="WhatsApp Image 2025-05-11 at 13.10.54_cd850ae5.jpg" alt="Brain Clinic Reception Area" class="featured-image">
+            <div class="gallery-overlay">
+              <button class="gallery-btn prev-btn" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="gallery-btn next-btn" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <button class="gallery-fullscreen-btn" aria-label="View fullscreen">
+                <i class="fas fa-expand"></i>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active" data-src="WhatsApp Image 2025-07-17 at 23.45.10_393bf0b6.jpg" data-alt="Brain Clinic Reception Area">
+              <img src="WhatsApp Image 2025-07-17 at 23.45.10_393bf0b6.jpg" alt="Thumbnail - Reception Area">
+              <div class="thumb-caption">Reception</div>
+            </div>
+            <div class="thumb" data-src="WhatsApp Image 2025-07-17 at 23.47.38_6f92765a.jpg" data-alt="Therapy Room">
+              <img src="WhatsApp Image 2025-07-17 at 23.47.38_6f92765a.jpg" alt="Thumbnail - Therapy Room">
+              <div class="thumb-caption">Therapy Session</div>
+            </div>
+            <div class="thumb" data-src="WhatsApp Image 2025-07-17 at 23.46.53_d376050a.jpg" data-alt="Sensory Integration Room">
+              <img src="WhatsApp Image 2025-07-17 at 23.46.53_d376050a.jpg" alt="Thumbnail - Sensory Integration Room">
+              <div class="thumb-caption">Play Area</div>
+            </div>
+            <div class="thumb" data-src="WhatsApp Image 2025-07-17 at 23.45.10_f91443cb.jpg" data-alt="Rehabilitation Equipment">
+              <img src="WhatsApp Image 2025-07-17 at 23.45.10_f91443cb.jpg" alt="Thumbnail - Rehabilitation Equipment">
+              <div class="thumb-caption">Activities</div>
+            </div>
+            <div class="thumb" data-src="WhatsApp Image 2025-07-17 at 23.45.09_783431e6.jpg" data-alt="Children's Play Area">
+              <img src="WhatsApp Image 2025-07-17 at 23.45.09_783431e6.jpg" alt="Thumbnail - Children's Play Area">
+              <div class="thumb-caption">Session</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-info animate-on-scroll">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-universal-access"></i>
+            </div>
+            <h3>Accessible Design</h3>
+            <p>Our clinic is fully accessible with ramps, elevators, and adapted facilities for all patients.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Safe Environment</h3>
+            <p>We maintain the highest standards of cleanliness and safety protocols for your peace of mind.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Modern Equipment</h3>
+            <p>Our facility is equipped with the latest therapeutic and diagnostic technology.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fullscreen Modal -->
+      <div id="gallery-modal" class="gallery-modal hidden">
+        <button class="modal-close-btn" id="gallery-modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+          <img id="modal-image" src="/placeholder.svg" alt="">
+          <div class="modal-caption" id="modal-caption"></div>
+        </div>
+        <button class="modal-nav-btn prev-btn" id="modal-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-nav-btn next-btn" id="modal-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section bg-gray">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Meet Our Expert Team</h2>
+          <div class="section-divider teal"></div>
+        </div>
+        <div class="team-grid">
+          <div class="team-card animate-on-scroll">
+            <div class="team-image">
+              <img src="WhatsApp Image 2025-05-14 at 20.36.58_ac86e520.jpg" alt="Dr. Rakesh Kumar">
+            </div>
+            <div class="team-info">
+              <h3>Dr. Rakesh Kumar</h3>
+              <p class="team-title">Founder & Director- BRAIN CLINIC</p>
+              <ul>
+                <li>Lead Neurologist with 10+ years of neuro rehab experience.</li>
+                <li>MBBS MD(Medicine, KGMC Lucknow).</li>
+                <li>DM(Neurology, NIMHANS-Bangalore)</li>
+                <li>Consultant Neurologist-Yashoda Hospital.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-card animate-on-scroll" data-delay="100">
+            <div class="team-image">
+              <img src="WhatsApp Image 2025-06-08 at 14.46.55_8cb16253.jpg" alt="Dr. Anuket Yadav">
+            </div>
+            <div class="team-info">
+              <h3>Dr. Anuket Yadav</h3>
+              <p class="team-title">Centre Head of the Department (BRAIN CLINIC ANRC)</p>
+              <ul>
+                <li>BOT, AIOTA certified, Extensive clinical practice.</li>
+                <li>Mental Health Counsellor -APNI SANSKRITI CHARITABLE FOUNDATION, Noida</li>
+                <li>Primary Counsellor Diploma- COUNSEL INDIA.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-card animate-on-scroll" data-delay="200">
+            <div class="team-image">
+              <img src="WhatsApp Image 2025-05-14 at 20.37.48_c934bc0a.jpg" alt="Dr. Geetankshi">
+            </div>
+            <div class="team-info">
+              <h3>Miss. Geetankshi</h3>
+              <p class="team-title">Special Educator</p>
+              <ul>
+                <li>D.Ed. in Special Education</li>
+                <li>5+ years experience in Special Education</li>
+                <li>Intellectual and Developmental Disabilities</li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-card animate-on-scroll">
+            <div class="team-image">
+              <img src="WhatsApp Image 2025-07-07 at 10.25.42_6ddf6493.jpg" alt="Dr. Anisha Dhingra">
+            </div>
+            <div class="team-info">
+              <h3>Miss. Anisha Dhingra</h3>
+              <p class="team-title">Psychologist</p>
+              <ul>
+                <li>PGDRP, MA Clinical Psychology</li>
+                <li>Specializes in Psychological </li>
+                <li>Published researcher in behavioral interventions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-card animate-on-scroll" data-delay="100">
+            <div class="team-image">
+              <img src="WhatsApp Image 2025-07-07 at 10.25.54_50df7164.jpg" alt="Dr. Aman Choudhary">
+            </div>
+            <div class="team-info">
+              <h3>Mr. Aman Choudhary</h3>
+              <p class="team-title">Clinical Psychologist</p>
+              <ul>
+                <li>M.Sc Neuropsychology</li>
+                <li>M.Phil Clinical Psychology</li>
+                <li>MSHRM (Netherlands)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="team-card animate-on-scroll" data-delay="200">
+            <div class="team-image">
+              <img src="WhatsApp Image 2025-07-14 at 19.30.00_e8b23871.jpg" alt="MR. Pradeep Kumar">
+            </div>
+            <div class="team-info">
+              <h3>Mr.Pradeep Kumar </h3>
+              <p class="team-title">Speech Therapist</p>
+              <ul>
+                <li>Bachelors in audiology speech language and pathology</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-white">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Success Stories: Hear from Our Clients</h2>
+          <div class="section-divider blue"></div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card animate-on-scroll">
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-avatar">
+              <div class="avatar">S</div>
+            </div>
+            <h3>Improved Motor Skills</h3>
+            <p class="testimonial-quote">"Occupational Therapy transformed my Child's daily abilities."</p>
+            <p class="testimonial-author">- Sonia</p>
+          </div>
+          <div class="testimonial-card animate-on-scroll" data-delay="100">
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-avatar">
+              <div class="avatar">M</div>
+            </div>
+            <h3>Enhanced Communication</h3>
+            <p class="testimonial-quote">"Speech therapy boosted my Child's confidence to engage socially."</p>
+            <p class="testimonial-author">- Shrushti</p>
+          </div>
+          <div class="testimonial-card animate-on-scroll" data-delay="200">
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-avatar">
+              <div class="avatar">A</div>
+            </div>
+            <h3>Emotional Well-being</h3>
+            <p class="testimonial-quote">"CBT helped my Child manage anxiety and find balance."</p>
+            <p class="testimonial-author">- Rohan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Location & Map Section -->
+    <section id="location" class="section bg-gray">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Find Us Easily</h2>
+          <div class="section-divider teal"></div>
+          <p class="section-description">Located in the heart of Ghaziabad, easily accessible by public transport and with ample parking facilities.</p>
+        </div>
+        
+        <!-- Location Info Cards -->
+        <div class="location-info-grid animate-on-scroll">
+          <div class="location-info-card">
+            <div class="location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Our Address</h3>
+            <p>Brain Clinic & Rehabilitation Center</p>
+            <p>N 227 F, N Block Opp. Jeevan Jyoti Hospital</p>
+            <p>Sector 12, Pratap Vihar, Ghaziabad</p>
+            <p>Uttar Pradesh 201009</p>
+          </div>
+          
+          <div class="location-info-card">
+            <div class="location-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Operating Hours</h3>
+            <div class="hours-list">
+              <div class="hour-item">
+                <span>Monday - Friday</span>
+                <span>9:00 AM - 6:00 PM</span>
+              </div>
+              <div class="hour-item">
+                <span>Saturday</span>
+                <span>9:00 AM - 4:00 PM</span>
+              </div>
+              <div class="hour-item">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="location-info-card">
+            <div class="location-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h3>Parking & Access</h3>
+            <ul class="access-list">
+              <li><i class="fas fa-check"></i> Free parking available</li>
+              <li><i class="fas fa-check"></i> Wheelchair accessible</li>
+              <li><i class="fas fa-check"></i> Public transport nearby</li>
+              <li><i class="fas fa-check"></i> Easy road access</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Interactive Map Container -->
+        <div class="map-section animate-on-scroll" data-delay="200">
+          <div class="map-header">
+            <h3>Interactive Location Map</h3>
+            <div class="map-controls">
+              <button class="map-control-btn" id="get-directions" title="Get Directions">
+                <i class="fas fa-directions"></i>
+                <span>Get Directions</span>
+              </button>
+              <button class="map-control-btn" id="view-larger" title="View Larger Map">
+                <i class="fas fa-expand"></i>
+                <span>Larger Map</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="enhanced-map-container">
+            <iframe 
+              id="clinic-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.0123456789!2d77.4102155!3d28.6440537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM4JzM4LjYiTiA3N8KwMjQnNDYuMSJF!5e0!3m2!1sen!2sin!4v1234567890123"
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Brain Clinic Location - Interactive Map">
+            </iframe>
+            
+            <!-- Map Overlay with Quick Actions -->
+            <div class="map-overlay">
+              <div class="map-quick-actions">
+                <button class="quick-action-btn" onclick="openGoogleMaps()">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span>Open in Google Maps</span>
+                </button>
+                <button class="quick-action-btn" onclick="copyAddress()">
+                  <i class="fas fa-copy"></i>
+                  <span>Copy Address</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transportation Options -->
+        <div class="transport-section animate-on-scroll" data-delay="300">
+          <h3>How to Reach Us</h3>
+          <div class="transport-grid">
+            <div class="transport-card">
+              <div class="transport-icon">
+                <i class="fas fa-car"></i>
+              </div>
+              <h4>By Car</h4>
+              <p>Take NH-24 towards Ghaziabad, exit at Pratap Vihar. Our clinic is opposite Jeevan Jyoti Hospital.</p>
+              <small>Parking available on-site</small>
+            </div>
+            
+            <div class="transport-card">
+              <div class="transport-icon">
+                <i class="fas fa-bus"></i>
+              </div>
+              <h4>By Bus</h4>
+              <p>Take bus routes 101, 205, or 310 to Pratap Vihar. The clinic is a 2-minute walk from the bus stop.</p>
+              <small>Multiple bus routes available</small>
+            </div>
+            
+            <div class="transport-card">
+              <div class="transport-icon">
+                <i class="fas fa-train"></i>
+              </div>
+              <h4>By Metro</h4>
+              <p>Take the Blue Line to Vaishali Metro Station, then take an auto or bus to Pratap Vihar.</p>
+              <small>15 minutes from metro station</small>
+            </div>
+            
+            <div class="transport-card">
+              <div class="transport-icon">
+                <i class="fas fa-taxi"></i>
+              </div>
+              <h4>By Taxi/Auto</h4>
+              <p>Available from all major locations in Delhi NCR. Show this address to your driver.</p>
+              <small>Uber & Ola services available</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Connect With Us</h2>
+          <div class="section-divider teal"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card animate-on-scroll">
+            <h3>Quick Contact</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Brain Clinic & Rehabilitation Center,N 227 F,N Block Opp. Jeevan Jyoti Hospital ,Sector 12, Pratap Vihar, Ghaziabad, Uttar Pradesh 201009</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+91 9911983145</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+91 9205024680</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>brainclinicanrc@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card animate-on-scroll" data-delay="100">
+            <h3>Feedback Form</h3>
+            <form id="feedback-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-teal w-full">Submit Feedback</button>
+              <div id="form-success" class="form-success hidden">
+                Thank you for your feedback!
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Brain Clinic</h3>
+          <p>
+            Empowering Minds, Transforming Lives. Evidence-based rehab and support for neurological and developmental
+            needs.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#services">Occupational Therapy</a></li>
+            <li><a href="#services">Stroke & Hand Rehabilitation</a></li>
+            <li><a href="#services">Special Education</a></li>
+            <li><a href="#specialized-therapies">ABA Therapy</a></li>
+            <li><a href="#specialized-therapies">Speech & Language Therapy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#testimonials">Success Stories</a></li>
+            <li><button class="footer-btn" id="footer-book-btn">Book Appointment</button></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>N 227 F, N Block, Sector 12, Pratap Vihar, Ghaziabad</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91 9916546640</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>brainclinicanrc@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Brain Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat -->
+  <div class="whatsapp-chat">
+    <button class="whatsapp-btn" id="whatsapp-toggle">
+      <i class="fas fa-comment"></i>
+      <i class="fas fa-times hidden"></i>
+    </button>
+    <div class="chat-window hidden" id="chat-window">
+      <div class="chat-header">
+        <i class="fas fa-comment"></i>
+        <span>WhatsApp Chat</span>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be added here by JavaScript -->
+      </div>
+      <div class="chat-input">
+        <form id="chat-form">
+          <input type="text" id="chat-message" placeholder="Type a message...">
+          <button type="submit">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Appointment Modal -->
+  <div class="modal-overlay hidden" id="appointment-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <i class="fas fa-calendar-alt"></i>
+        <h3>Book an Appointment</h3>
+        <button class="modal-close" id="modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <form id="appointment-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="app-name">Full Name</label>
+              <input type="text" id="app-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="app-phone">WhatsApp Number</label>
+              <div class="phone-input">
+                <div class="phone-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <input type="tel" id="app-phone" name="phone" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="app-email">Email Address</label>
+            <input type="email" id="app-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="app-service">Service Required</label>
+            <select id="app-service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="occupational-therapy">Occupational Therapy</option>
+              <option value="stroke-rehabilitation">Stroke & Hand Rehabilitation</option>
+              <option value="special-education">Special Education</option>
+              <option value="aba-therapy">ABA Therapy</option>
+              <option value="speech-therapy">Speech & Language Therapy</option>
+              <option value="psychotherapy">Psychotherapy & CBT</option>
+              <option value="group-therapy">Sports and Group Therapy</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="app-date">Preferred Date</label>
+              <input type="date" id="app-date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="app-time">Preferred Time</label>
+              <select id="app-time" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="morning">Morning (9AM - 12PM)</option>
+                <option value="afternoon">Afternoon (12PM - 3PM)</option>
+                <option value="evening">Evening (3PM - 6PM)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="app-message">Additional Information</label>
+            <textarea id="app-message" name="message" rows="3"
+              placeholder="Please share any specific concerns or requirements"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-success hidden" id="modal-success">
+        <div class="success-icon">
+          <i class="fas fa-check"></i>
+        </div>
+        <h3>Appointment Booked!</h3>
+        <p>Thank you for booking an appointment with Brain Clinic. You will receive a confirmation on WhatsApp shortly.</p>
+      </div>
+      <div class="modal-footer" id="modal-footer">
+        <button class="btn btn-outline" id="modal-cancel">Cancel</button>
+        <button class="btn btn-teal" id="modal-submit">
+          <span id="submit-text">Book Appointment</span>
+          <span id="submit-loading" class="hidden">
+            <i class="fas fa-spinner fa-spin"></i> Processing...
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Additional JavaScript for the new map section
+    function openGoogleMaps() {
+      const address = "Brain Clinic & Rehabilitation Center, N 227 F, N Block Opp. Jeevan Jyoti Hospital, Sector 12, Pratap Vihar, Ghaziabad, Uttar Pradesh 201009";
+      const encodedAddress = encodeURIComponent(address);
+      window.open(`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`, '_blank');
+    }
+
+    function copyAddress() {
+      const address = "Brain Clinic & Rehabilitation Center, N 227 F, N Block Opp. Jeevan Jyoti Hospital, Sector 12, Pratap Vihar, Ghaziabad, Uttar Pradesh 201009";
+      navigator.clipboard.writeText(address).then(() => {
+        // Show a temporary success message
+        const btn = event.target.closest('.quick-action-btn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i><span>Address Copied!</span>';
+        btn.style.background = '#10b981';
+        
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = '';
+        }, 2000);
+      }).catch(() => {
+        alert('Address: ' + address);
+      });
+    }
+
+    // Get Directions functionality
+    document.getElementById('get-directions')?.addEventListener('click', function() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+          const destination = "28.6440537,77.4127904"; // Brain Clinic coordinates
+          window.open(`https://www.google.com/maps/dir/${lat},${lng}/${destination}`, '_blank');
+        }, function() {
+          // Fallback if geolocation fails
+          openGoogleMaps();
+        });
+      } else {
+        openGoogleMaps();
+      }
+    });
+
+    // View Larger Map functionality
+    document.getElementById('view-larger')?.addEventListener('click', function() {
+      openGoogleMaps();
+    });
+  </script>
+</body>
+</html>
